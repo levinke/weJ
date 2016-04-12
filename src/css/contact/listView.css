@@ -1,0 +1,54 @@
+.ContactDetails {
+	position: fixed;
+	top: 50px;
+	left: 404px;
+	width: 602px;
+	height: 604px;
+	padding: 0;
+	margin: 0;
+	background: #FFFFFF;
+	
+}
+
+.ContactDetails .ContactDetailsFace {
+	position: relative;
+	width: 602px;
+	height: 100px;
+	margin: 25px 0 0 0px;
+	text-align: center;
+}
+
+.ContactDetails .ContactDetailsFace span {
+	margin-left: 21px;
+}
+
+.ContactDetails .ContactPhone {
+	position: relative;
+	margin-top: 40px;
+	margin-left: 104px;
+	height: 30px;
+	width: 602px;
+}
+
+.ContactDetails .ContactLoaction {
+	position: relative;
+	width: 350px;
+	height: 200px;
+	margin-left: 101px;
+}
+
+.ContactDetails .ContactLoaction li {
+	height: 59px;
+	border: solid 1px #BBBBBB;
+	border-left: none;
+	border-right: none;
+	line-height: 60px;
+	font-size: 14px;
+	font-family: arial;
+}
+
+.ContactDetails .ContactCustom {
+	position: relative;
+	height: 200px;
+	width: 602px;
+}

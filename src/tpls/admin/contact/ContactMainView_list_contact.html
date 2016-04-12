@@ -1,0 +1,20 @@
+<div class="Contacts">
+	<div id="ContactsTitle" class="ContactsTitle">
+		<a href="#"><img src="../img/icon_right_arrow.png" style="float: left;margin-left: 10px;margin-top: 7px;width: 20px;height: 20px;" /></a>
+		<span style="float: left;color: #ffffff;margin-left: 14px;font-family: arial;">
+		 		联系人
+		 	</span>
+	</div>
+	<div class="ContactsContent">
+		<ul ng-repeat="contact in contactLists">
+			<li>
+                <img src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{contact.headFid}}" class="ContactsFace" />
+				<a href="" class="Contact" ng-click="getPersonID(contact)">
+					<span class="ContactsName">
+							{{contact.name}}
+						</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

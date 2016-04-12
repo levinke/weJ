@@ -1,0 +1,41 @@
+<div class="ContactDetails">
+	<div style="display: none;" id="ContactDetails">
+		<div class="ContactDetailsFace">
+			<img src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{presonData.headFid}}" style="width: 60px;height: 60px;" />
+			<br />
+			<span>
+			{{presonData.name}}
+		</span>
+			<img src="{{presonData.gender | femaleDif}}" style="margin-top: 5px; margin-left: 10px;width: 12px;height:19px;" />
+		</div>
+		<div class="ContactPhone">
+			<img src="../img/icon_phone.png" />
+			<span>{{presonData.phoneNo}}</span>
+			<span style="margin-left: 130px;">
+			<img src="../img/icon_message.png"/>
+			<a href="#" style='color: #000000;text-decoration: none;font-family: arial;'>私聊</a>
+		</span>
+		</div>
+		<div class="ContactLoaction">
+			<ul>
+				<li>&nbsp;&nbsp;<img src="../img/icon_location.png" /><span style="width: 100px;margin-left: 10px;">
+				居住地&nbsp;&nbsp;&nbsp;：
+			</span><span id="Location" style="margin-left: 26px;">{{presonData.address}}</span></li>
+				<li>&nbsp;&nbsp;<img src="../img/icon_experience.png" /><span style="width: 100px;margin-left: 10px;">
+				工作经历：
+			</span><span id="Location" style="margin-left: 26px;">{{presonData.work_experience}}</span></li>
+				<li>&nbsp;&nbsp;<img src="../img/icon_education.png" /><span style="width: 100px;margin-left: 10px;">
+				教育经历：
+			</span><span id="Location" style="margin-left: 26px;">{{presonData.edu_experience}}</span></li>
+			</ul>
+		</div>
+		<div class="ContactCustom">
+			<span style="font-size: 14px;font-family: arial;margin-left: 17px;">
+			自定义
+		</span>
+			<br />
+			<br />
+			<textarea style="width: 582px;height: 153px;padding: 20px 0 0 40px;margin-left: 10px;border: solid 1px #DDDDDD;border-radius: 4px;" readonly="readonly">{{presonData.singnature}}</textarea>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,151 @@
+.Schedule{
+	width: 304px;
+	height: 566px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #FFFFFF;
+}
+
+.aboluo-w-700{
+	width:304px;
+	height:567px;
+}
+.aboluo-leftdiv{
+	position:relative;
+	width:304px;
+	height:250px;
+
+}
+.aboluo-rightdiv{
+	width:304px;
+	height:300px;
+}
+.aboluo-tools{
+	position:relative;
+	line-height:10px;
+	height:7%;
+	padding:10px;
+	border-bottom:#d0f7fd solid 1px;
+}
+.aboluo-rilidiv{
+	position:relative;
+	width:100%;
+	height:85%;
+	padding-left:2%;
+	padding-right:2%;
+}
+
+.aboluo-calendar-select-year{
+	width:70px;float:left;
+	}
+.aboluo-calendar-select-year select {
+	width:70px;height: 20px;margin-top: 2px;}
+.aboluo-calendar-month{
+	width:90px;float:left;margin-left:20px;line-height: 10px;}
+.aboluo-calendar-month a{
+	font-size:15px;text-align:center;color:#008080;text-decoration:none;}
+.aboluo-calendar-month select{
+	width:60px;height: 20px;margin-top: 2px;}
+.aboluo-tools .aboluo-toToday{
+	height: 20px;
+	width:70px;border:none;margin-left:25px;margin-top:0px;color:#b7b7b7;background:#ffffff;font-size: 10px;}
+.aboluo-tools .aboluo-toToday:hover{
+	color: #95c040;}
+.aboluo-rilitable{
+	width:96%;text-align:center;hegiht:100%;padding-top:5px;}
+.aboluo-rilitable .aboluo-rilithead{
+	border-bottom: 1px solid #e3e4e6;}
+.aboluo-rilidiv .aboluo-rilitable tr{
+	width:450px;}
+.aboluo-rilidiv .aboluo-rilitable tr th{
+	width:14.2%;font-size:12px;}
+.aboluo-rilidiv .aboluo-rilitable tr td{
+	width:14.2%;font-size:20px;color:#000000;}
+.aboluo-rilidiv .aboluo-rilitable tr .aboluo-currToday{
+background:#FFBB00;color:#FFFFFF;}
+.aboluo-rilidiv .aboluo-rilitable tr .aboluo-tdcurrToday{
+background:#FFBB00;color:#FFFFFF;}
+.aboluo-rilidiv .aboluo-rilitable tr td a{
+	font-size:12px;color:#000000;display:block;margin:auto;position:relative;}
+.aboluo-rilidiv .aboluo-rilitable .aboluo-td-a-ban{
+	font-size:13px;position:absolute;text-align:left;line-height:14px;text-indent:1px;width:15px;display:block;background:#969799;height:15px;color:#fff;overflow:hidden;top:0px;left:0px;}
+.aboluo-rilidiv .aboluo-rilitable .aboluo-td-a-xiu{
+	font-size:13px;position:absolute;text-align:left;line-height:14px;text-indent:1px;width:15px;display:block;background:#f43;height:15px;color:#fff;overflow:hidden;top:0px;left:0px;}
+.aboluo-rilidiv .aboluo-rilitable tr td a:hover{
+	border:3px solid #FFBB00;cursor:pointer;}
+.aboluo-rilidiv .aboluo-rilitable tr td .aboluo-aclick{
+	border:3px solid #FFBB00;}
+.aboluo-rilidiv .aboluo-rilitable .aboluo-rilitbody .aboluo-pervMonthDays{
+	color:#BFBFC5;
+}
+.aboluo-rilidiv .aboluo-rilitable .aboluo-rilitbody .aboluo-nextMonthDays{
+	color:#BFBFC5;
+}
+.aboluo-rightdiv p{ 
+	color:#000000;
+	margin-top: 10px;
+	text-align: center;
+}
+.aboluo-rightdiv .aboluo-xssj span{ 
+	margin-left:5px;
+	color: #000000;
+}
+.aboluo-rightdiv .aboluo-currday{
+	width:60%;height:20%;margin:auto;text-align:center;background:#FFBB00;font-size:50px;
+}
+
+.caseContents {
+ 	height: 600px;
+ 	width: 300px;
+ 	overflow-x: hidden;
+ 	overflow-y: scroll;
+ }
+ 
+ .caseTitle {
+ 	background-color: #46505A;
+ 	width: 100%;
+ 	height: 40px;
+ }
+ 
+ a {
+ 	text-decoration: none;
+ }
+ a:hover{
+ 	text-decoration: none;
+ }
+ 
+ ul {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ }
+ 
+ .content li {
+ 	width: 100%;
+ 	height: 45px;
+ 	border: solid 1px #D9D9D9;
+ }
+ 
+ .content .case {
+ 	display: block;
+ 	width: 100%;
+ 	padding: 15px;
+ }
+ 
+ .content .case .caseName {
+ 	color: #000000;
+ 	margin: 3px 0 0 20px;
+ 	font-family: arial;
+ 	font-size: 13px;
+ 	height: 45px;
+ 	width: auto;
+ 	padding: 15px;
+ }
+ 
+ .priority {
+ 	margin: 0;
+ 	float: left;
+ 	height: 45px;
+ 	width: 15px;
+ 	background-color: #5EDF5E;
+ }

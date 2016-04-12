@@ -1,0 +1,78 @@
+<!-- 代码部分begin -->
+<!--
+//用table 模拟出日期的效果
+//格式
+//      xxxx年xx月xx日  (选择的日期,默认为当天)  日期要有5-6排，连接上月下月。当选择上下月中的日期时，跳到上月或下月中
+//星期一,星期二,星期三,星期四,星期五,星期六,星期七  
+//day1  day2 day3 day4  day5  day6  day7
+//day1  day2 day3 day4  day5  day6  day7
+//day1  day2 day3 day4  day5  day6  day7
+//day1  day2 day3 day4  day5  day6  day7
+//day1  day2 day3 day4  day5  day6  day7
+//day1  day2 day3 day4  day5  day6  day7
+-->
+<div style="
+	position: fixed;
+	top: 50px;
+	left: 100px;
+	width: 304px;
+	background: #FFFFFF;
+	border: solid 1px #DDDDDD;
+		overflow-x: hidden;"  ng-init="initData()">
+
+	<div id="ScheduleTitle" class="ScheduleTitle" style="	background-color: #46505a;width: 304px;height: 36px;line-height: 36px;">
+		<a href="#"><img src="../img/icon_right_arrow.png" style="float: left;margin-left: 10px;margin-top: 7px;width: 20px;height: 20px;" /></a>
+		<span style="color: #FFFFFF;font-size: 14px;margin-left: 10px;">
+			我的日程
+		</span>
+	</div>
+	<div class="Schedule">
+		<div class="aboluo-w-700" id="aboluo-w-700">
+			<div class="aboluo-leftdiv"  id="aboluo-leftdiv">
+				<div class="aboluo-tools" id="aboluo-tools">
+					<div class="aboluo-calendar-select-year" id="aboluo-calendar-select-year"></div>
+					<div class="aboluo-calendar-month"id="aboluo-calendar-month">
+						<a class="aboluo-month-a-perv" href="javascript:;"></a>
+						<a class="aboluo-month-a-next" href="javascript:;"></a>
+					</div>
+					<input type="button" class="aboluo-toToday" id="aboluo-toToday" value="返回今天" />
+				</div>
+				<div class="aboluo-rilidiv" id="aboluo-rilidiv">
+					<table class="aboluo-rilitable"id="aboluo-rilitable" cellspacing="0" cellpadding="0">
+						<thead class="aboluo-rilithead" id="aboluo-rilithead">
+							<tr>
+								<th>一</td>
+									<th>二</td>
+										<th>三</td>
+											<th>四</td>
+												<th>五</td>
+													<th style="color:red;">六</td>
+														<th style="color:red;">日</td>
+							</tr>
+						</thead>
+						
+					</table>
+				</div>
+
+			</div>
+			<div class="aboluo-rightdiv"id="aboluo-rightdiv">
+				<p class="aboluo-xssj" id="aboluo-xssj">
+					<p>
+						<p style="font-size: 14px;font-weight: bold;">我的任务</p>
+						<div id="content" class="content">
+							<ul style="margin: 0;">
+								<li>
+									<div class="priority">
+									</div>
+									<a href="" class="case" style="text-decoration: none;">
+										<span class="caseName">
+         				     WE
+            				</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+			</div>
+		</div>
+	</div>
+</div>

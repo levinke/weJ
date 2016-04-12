@@ -1,0 +1,24 @@
+<div id="list_waper" style="height: 604px;">
+	<div class="projectContents">
+		<div id="projectTitle" class="projectTitle">
+			<img src="../img/icon_right_arrow.png" style="float: left;margin-left: 10px;margin-top: 7px;width: 20px;height: 20px;" />
+			<span style="float: left;margin-left:14px;color: #ffffff;">
+		 		项目
+		 	</span>
+			<img id="we_ap" src="../img/icon_white_plus.png" style="margin: 7px 15px 0 0; float: right;" ng-click="addProject()"/>
+		</div>
+		<div class="projectList">
+			<ul ng-repeat="project in projects">
+				<li >
+					<img src="../img/icon.png" style="float: left;margin-left: 12px;margin-top: 7px;" />
+					<a href="#/admin/TaskView" class="project" ng-click="getTaskID(project)">
+						<span class="projectName" >
+							{{project.project_name}}
+						</span>
+					</a>
+					<input type="button" class="btnEdit" value="编辑" ng-click="editProject(project)"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

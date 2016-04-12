@@ -1,0 +1,74 @@
+.Xiugaiziliao{
+		height: 430px;
+		width: 300px;
+		background: #EBEBEB;
+		z-index: 9999;
+		margin-top: -50px;
+		margin-left: 350px;
+		position: fixed;
+		border-radius: 7px;
+	}
+	.Xiugaiziliao .above{
+		height: 150px;
+		width: 300px;
+		background: #149BDF;
+		border-top-right-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+	.Xiugaiziliao .above .CloseDiv{
+		border-radius: 45px;
+		width: 14px;
+		display: block;
+		height: 14px;
+		line-height: 13px;
+		text-align: center;
+		font-size: 12px;
+		background: #f8564f;
+		margin-left: 5px;
+		margin-top: 5px;
+		position: fixed;
+		text-decoration: none;
+		font-family: arial;
+		color: #000000;
+		cursor: pointer;
+		z-index: 99999;
+	}
+	
+	.Xiugaiziliao .ContactDetailsFace{
+		position: relative;
+		width: 300px;
+		height: 100px;
+		text-align: center;
+	}
+	.Xiugaiziliao .ContactDetailsFace span{
+		margin-left: 21px;
+		color: #FFFFFF;
+		font-family: arial;
+	}
+	.Xiugaiziliao .under{
+		width: 250px;
+		margin-left: 50px;
+		margin-top: 15px;
+	}
+	.Xiugaiziliao .under span{
+		font-size: 13px;
+		font-family: arial;
+		line-height: 25px;
+		margin-top: 20px;
+		font-weight: bold;
+	}
+	.Xiugaiziliao .under a{
+		display: block;
+		width: 120px;
+		height: 30px;
+		background: #95C040;
+		line-height: 30px;
+		text-align: center;
+		color: #FFFFFF;
+		margin-top: 15px;
+		margin-left: 45px;
+		font-size: 13px;
+		font-family: arial;
+		cursor: pointer;
+		border-radius: 5px;
+	}

@@ -1,0 +1,33 @@
+<style type="text/css">
+	@charset "UTF-8";
+	[ng\:cloak],
+	[ng-cloak],
+	[data-ng-cloak],
+	[x-ng-cloak],
+	.ng-cloak,
+	.x-ng-cloak,
+	.ng-hide:not(.ng-hide-animate) {
+		display: none !important;
+	}
+	
+	ng\:form {
+		display: block;
+	}
+	
+	.ng-animate-shim {
+		visibility: hidden;
+	}
+	
+	.ng-anchor {
+		position: absolute;
+	}
+</style>
+
+<div ng-controller="ContactViewController">
+<div ng-include src="'admin/user/left-title.html'"></div>
+<div ng-include src="'admin/user/left-menu.html'"></div>
+<div ng-include src="'admin/contact/ContactMainView_list_contact.html'"></div>
+<div ng-include src="'admin/contact/ContactMainView_contactView.html'"></div>
+<div ng-include src="'admin/contact/Xiugaiziliao.html'">	</div>
+
+</div>

@@ -1,0 +1,117 @@
+<div class="projectMain">
+	<div class="projectwhite" id="projectwhite" style="display: none;">
+		
+		<!-- pa -->
+		<div class="projectHome" id="projectHome" style="overflow-x: hidden;overflow-y: auto;height: 550px;">
+			<div class="projectViewHeader">
+				<input type="text" id="projectId" placeholder="请输入项目代号" />
+				<a href="#"><img src="../img/2.png" style="width: 20px;height:20px;margin: 10px 0 0 10px;" /></a>
+				<input type="text" maxlength="9" id="projectName" placeholder="请输入项目名称" />
+			</div>
+			<div class="projectViewContents">
+				<textarea id="projectSynopsis" name="textArea" placeholder="请输入简介" style="resize: none;"></textarea>
+			</div>
+			<div class="member" style="height: 83px;">
+				<ul>
+					<li ng-repeat="column in columns">
+						<a href="#">
+							<img src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{column.headFid}}" />
+							<span id="membersName" style="margin-left: 0;">
+								{{column.name}}
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="../img/icon_plus.png" style="margin-top: 12px;" ng-click="addProjectMember()" />
+					</li>
+					<li>
+						<img src="../img/icon-_minus.png" style="margin-top: 12px;" ng-click="deleteProjectMember()" />
+					</li>
+				</ul>
+			</div>
+			<div id="projectFiles" class="projectFiles">
+				<img src="../img/3.png" style="width: 23px;height: 20px;" ng-click="updatafile()" class="updataimg" />
+				<input type="file" accept=".pdf,image/*" id="taskfile" name='file' onchange="angular.element(this).scope().fileNameChanged()" style="display: none;">
+				<ul id="updatafile" style="display: none;">
+					<li ng-repeat="fileList in files">
+						<img style="float: left;margin-left: 30px;width: 45px;height: 45px;" id="product_img" src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{fileList.fid}}"/>
+						<a href="" class="downFile">
+							<span class="fileName" id="fileName">{{fileList.name}}
+							</span>
+							<span class="fileTime" id="filetime">{{fileList.time}}
+							</span>
+							<a ng-click="del_img(fileList)"><img src="../img/icon_del.png" id="del_img"/></a>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- pae -->
+		<div class="projectEditHome" id="projectEditHome" style="overflow-x: hidden;overflow-y: auto;height: 550px;display: none;">
+			<div class="projectViewHeader">
+				<input type="text" id="projectId1" placeholder="请输入项目代号" />
+				<a href="#"><img src="../img/2.png" style="width: 20px;height:20px;margin: 10px 0 0 10px;" /></a>
+				<input type="text" maxlength="9" id="projectName1" placeholder="请输入项目名称" />
+			</div>
+			<div class="projectViewContents">
+				<textarea id="projectSynopsis1" name="textArea" placeholder="请输入简介" style="resize: none;"></textarea>
+			</div>
+			<div class="member" style="height: 83px;">
+				<ul>
+					<li ng-repeat="column in columns">
+						<a href="#">
+							<img src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{column.headFid}}" />
+							<span id="membersName" style="margin-left: 0;">
+								{{column.name}}
+							</span>
+						</a>
+					</li>
+					<li>
+						<img src="../img/icon_plus.png" style="margin-top: 12px;" ng-click="addProjectMember()" />
+					</li>
+					<li>
+						<img src="../img/icon-_minus.png" style="margin-top: 12px;" ng-click="deleteProjectMember()" />
+					</li>
+				</ul>
+			</div>
+			<div id="projectEditFiles" class="projectFiles">
+				<img src="../img/3.png" style="width: 23px;height: 20px;" ng-click="updatafile1()" class="updataimg" />
+				<input type="file" accept=".pdf,image/*" id="taskfile1" name='file' onchange="angular.element(this).scope().fileNameChanged1()" style="display: none;">
+				<ul id="updatafile1" style="display: none;">
+					<li ng-repeat="fileLists in filesEdit">
+						<img style="float: left;margin-left: 30px;width: 45px;height: 45px;" id="product_img" src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{fileLists.fid}}"/>
+						<a href="" class="downFile">
+							<span class="fileName" id="fileName1">{{fileLists.name}}
+							</span>
+							<span class="fileTime" id="filetime1">{{fileLists.time}}
+							</span>
+							<a ng-click="del_imgEdit(fileLists)"><img src="../img/icon_del.png" id="del_img1"/></a>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- pa | pae -->
+		<div class="AddMember" id="projectMember" style="display: none;">
+			<div class="ContactsContent" style="height: 370px;background: #FFFFFF;margin-top: 0;">
+				<ul ng-repeat="contactProject in contactProjectLists" style="background: #FFFFFF;">
+					<li  style="background: #FFFFFF;">
+						<img src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{contactProject.headFid}}" class="ContactsFace" />
+						<a href="" class="Contact" ng-click="addPerson(contactProject)">
+							<span class="ContactsName">
+								{{contactProject.name}}
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- pa -->
+		<button id="submitButton" ng-click="send()">确定</button>
+		<!-- pae -->
+		<button id="submitButton1" ng-click="sendM()" style="display: none;">确定</button>
+	</div>
+</div>
+￼

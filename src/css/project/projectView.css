@@ -1,0 +1,213 @@
+/*projectView Styles*/
+
+.projectMain {
+	position: fixed;
+	top: 50px;
+	left: 404px;
+	width: 602px;
+	height: 604px;
+	background-color: #ffffff;
+
+}
+
+#projectId {
+	margin-top: 17px;
+	margin-left: 39px;
+	height: 35px;
+	width: 129px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+#projectName {
+	margin-top: 17px;
+	margin-left: 50px;
+	height: 35px;
+	width: 274px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+#projectId1 {
+	margin-top: 17px;
+	margin-left: 39px;
+	height: 35px;
+	width: 129px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+#projectName1 {
+	margin-top: 17px;
+	margin-left: 50px;
+	height: 35px;
+	width: 274px;
+	line-height: 35px;
+	font-size: 12px;
+}
+
+.projectViewContents {
+	height: 250px;
+	border-bottom: solid 1px #D9D9D9;
+}
+
+#projectSynopsis {
+	margin-left: 39px;
+	margin-top: 23px;
+	width: 490px;
+	height: 200px;
+}
+
+#projectSynopsis1 {
+	margin-left: 39px;
+	margin-top: 23px;
+	width: 490px;
+	height: 200px;
+}
+
+.member {
+	width: 100%;
+	height: 85px;
+	border-bottom: 1px solid #BBBBBB;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.member li {
+	float: left;
+	margin: 0 0 0 20px;
+	width: 70px;
+	height: 80px;
+	text-align: center;
+}
+
+.member a {
+	width: 60px;
+	height: 60px;
+	margin: 5px 0 0 10px;
+	display: block;
+	text-decoration: none;
+}
+
+.member span {
+	margin: 4px 0 0 0px;
+	color: #000000;
+	font-size: 12px;
+	font-family: "arial, helvetica, sans-serif";
+	text-align: center;
+}
+
+.member img {
+	width: 45px;
+	margin: 0 0 0 0px;
+	padding: 0;
+}
+
+#submitButton {
+	position: absolute;
+	left: 45%;
+	bottom: 1%;
+	height: 30px;
+	width: 100px;
+	line-height: 25px;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #95c040;
+	border: hidden;
+}
+
+#submitButton1 {
+	position: absolute;
+	left: 45%;
+	bottom: 1%;
+	height: 30px;
+	width: 100px;
+	line-height: 25px;
+	font-size: 15px;
+	color: #ffffff;
+	background-color: #95c040;
+	border: hidden;
+}
+
+.projectFiles {
+	position: relative;
+	margin-top: 17px;
+}
+
+.projectFiles img{
+	margin-left: 37px;
+}
+
+.projectFiles #updatafile{
+	margin-top: 17px;
+	margin-left: 0px;
+}
+
+.projectFiles .send {
+	margin: 10px 0 0 90%;
+}
+
+.projectFiles li {
+	margin-top: 2px;
+	background-color: #f7f5f5;
+	width: 100%;
+	height: 45px;
+}
+
+.projectFiles .downFile {
+	display: block;
+	width: 605px;
+	padding: 15px;
+}
+
+.projectFiles .fileName {
+	color: #000000;
+	font: arial;
+	font-size: 17px;
+	height: 45px;
+	width: auto;
+	padding: 15px;
+}
+
+.projectFiles .fileTime {
+
+}
+
+.projectFiles #del_img {
+	float: right;
+	margin-right: 30px;
+	width: 20px;
+	height: 20px;
+	margin-top: -40px;
+	position: relative;
+}
+
+.projectFiles #del_img1 {
+	float: right;
+	margin-right: 30px;
+	width: 20px;
+	height: 20px;
+	margin-top: -40px;
+	position: relative;
+}
+
+.btnDelete {
+	width: 25px;
+	height: 25px;
+	border: hidden;
+	background: url(../img/icon_del.png) no-repeat;
+	background-size: 80% 80%;
+	margin-left: 100px;
+	background-position: center;
+}
+
+.AddMember {
+	position: fixed;
+	top: 200px;
+	left: 410px;
+	height: 372px;
+	width: 304px;
+	border: solid 1px #DDDDDD;
+	background: #FFFFFF;
+	z-index: 999;
+}

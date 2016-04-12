@@ -1,0 +1,98 @@
+.Youxianji{
+		overflow-x: hidden;
+		overflow-y: auto;
+		width: 602px;
+		height: 600px;
+		position: fixed;
+	left: 404px;
+	top: 50px;
+	display: none;
+	z-index: 999;
+	background: #FFFFFF;
+	}
+	.Youxianji .level a{
+		color: #000000;
+		margin-left: 50px;
+		text-decoration: none;
+		width: 502px;
+		height: 50px;
+		line-height: 50px;
+		background: #ECF0F1;
+		display: block;
+		margin-top: 5px;
+		font-family: arial;
+	}
+	.Youxianji .level .shuru{
+		width: 498px;
+		height: 60px;
+		border: #95C040 solid 2px;
+		margin-left: 50px;
+		margin-top: 2px;
+	}
+	.Youxianji .level .shuru .ZidingyiName{
+		height: 50px;
+		margin-top: 5px;
+		border: none;
+		width: 410px;
+		margin-left: 20px;
+		font-size: 14px;
+	}
+	.Youxianji .level .shuru .ZidingyiSubmit{
+		border: none;
+		height: 30px;
+		width: 50px;
+		border-radius: 10px;
+		color: #FFFFFF;
+		font-size: 12px;
+	}
+	.Youxianji  .ZidingyiColor{
+		width: 500px;
+		height: 70px;
+		border: solid 1px #DDDDDD;
+		margin-left: 50px;
+	}
+	.Youxianji .level a .yanse{
+		height: 10px;
+		width: 10px;
+		border-radius: 45px;
+		float: left;
+		margin-left: 40px;
+		margin-right: 20px;
+		margin-top: 15px;
+	}
+	.Youxianji  .ZidingyiColor ul{
+		list-style: none;
+		margin-top: 10px;
+		margin-left: 30px;
+		
+	}
+	.Youxianji  .ZidingyiColor ul li{
+		float: left;
+	
+	}
+	.Sex{
+		width:50px;
+		height: 50px;
+		
+		margin: 0;
+		margin-left: 20px;
+	}
+	
+	.Sex label {
+	padding: 0;
+  	width: 50px;
+  	height: 50px;
+ 	position: absolute;
+ 	float: left;
+  	margin-top: 0px;
+  	margin-left:-10px;
+}
+.Sex input[type=radio] {
+  visibility: hidden;
+}
+.Sex input[type=radio]:checked + label{
+	background: url(../../img/icon_yesw@2x.png) no-repeat;
+	background-size: 50% 50%;
+	border: #ff3b30;
+	background-position: center;
+}

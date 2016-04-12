@@ -1,0 +1,193 @@
+.taskMain {
+	position: fixed;
+	left: 404px;
+	top: 50px;
+	width: 602px;
+	height: 604px;
+	background-color: #ffffff;
+}
+
+.TaskName {
+	width: 240px;
+	margin-top: 17px;
+	height: 30px;
+	line-height: 25px;
+	margin-left: 28%;
+	font-size: 12px;
+}
+
+.TaskInfo {
+	margin-left: 39px;
+	margin-top: 30px;
+	width: 490px;
+	height: 156px;
+}
+
+.member {
+	width: 602px;
+	height: 75px;
+	margin-top: 5px;
+	border-bottom: 1px solid #F7F5F5;
+}
+
+.member li {
+	position: relative;
+	float: left;
+	margin: 0 0 0 20px;
+	width: 70px;
+	height: 80px;
+}
+
+.member a {
+	width: 60px;
+	height: 70px;
+	margin: 0px 0 0 10px;
+	display: block;
+	text-decoration: none;
+	position: absolute;
+}
+
+.member span {
+	position: relative;
+	margin: 30px 0 0 10px;
+	color: #000000;
+	font-size: 12px;
+	font-family: "arial, helvetica, sans-serif";
+}
+
+.member img {
+	width: 45px;
+	margin: 5px 0 0 0px;
+	padding: 0;
+	z-index: 4;
+}
+
+.hint {
+	position: absolute;
+	border-radius: 40px;
+	background-color: red;
+	width: 23px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	float: right;
+	margin: 0 0 0 31px;
+}
+
+.hint .hintCounts {
+	margin-left: 15%;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+.TaskDate {
+	margin: 25px 0 0 0px;
+	height: 30px;
+	border-bottom: solid 1px #F7F5F5;
+}
+
+.TaskDate span {
+	font-family: arial;
+	font-size: 10px;
+	margin-left: 30px;
+}
+
+.TaskDate input {
+	margin-left: 5px;
+	border: solid 2px #95C040;
+	border-radius: 4px;
+	height: 25px;
+}
+
+.upload a {
+	position: relative;
+	margin-top: 10px;
+	display: block;
+	height: 40px;
+	background-color: #D9D9D9;
+	text-decoration: none;
+}
+
+.upload span {
+	position: absolute;
+	color: #000000;
+	font-family: helvetica;
+	font-size: 14px;
+	margin-top: 12px;
+	margin-left: 50px;
+}
+
+.upload img {
+	position: absolute;
+	margin-left: 500px;
+	margin-top: 5px;
+}
+
+.discuss a {
+	position: relative;
+	margin-top: 30px;
+	display: block;
+	height: 40px;
+	background-color: #D9D9D9;
+	text-decoration: none;
+}
+
+.discuss span {
+	position: absolute;
+	color: #000000;
+	font-family: helvetica;
+	font-size: 14px;
+	margin-top: 12px;
+	margin-left: 50px;
+}
+
+.projectContentTitle {
+	text-align: center;
+	font-family: arial;
+	font-size: 18px;
+}
+
+.projectContentTitle .details {
+	width: 400px;
+	height: 120px;
+	margin-left: 50px;
+	margin-right: 50PX;
+	border: hidden;
+	font-size: 14px;
+	color: #555555;
+}
+
+#projectDate {
+	margin-left: 400px;
+	font-size: 14px;
+	font-family: arial;
+}
+
+.projectData {
+	margin-top: 37px;
+	width: 100%;
+}
+
+.projectData li {
+	margin-top: 2px;
+	background-color: #D9D9D9;
+	width: 100%;
+	height: 45px;
+}
+
+.projectData a {
+	display: block;
+	width: 100%;
+	padding: 15px;
+	text-decoration: none;
+}
+
+.projectData span {
+	color: #000000;
+	margin: 20px;
+	font: arial;
+	font-size: 17px;
+	height: 45px;
+	width: auto;
+	padding: 15px;
+}

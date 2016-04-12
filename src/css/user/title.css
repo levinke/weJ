@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+/*=========用户头像与用户名字============*/
+
+.left-header{
+	height: 100px;
+	width: 100px;
+	background: #FFFFFF;
+}
+
+.left-header .avatar .logo{
+	position: fixed;
+	margin-top:10px;
+	margin-left: 20px;
+	height: 60px;
+	border-radius: 35px;
+}
+
+.left-header .info {
+	position: fixed;
+	text-align: center;
+	width: 100px;
+	margin-top: 60px;
+}
+.left-header .info .nickname #username{
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+

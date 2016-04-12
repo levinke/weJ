@@ -1,0 +1,87 @@
+<style type="text/css">
+	.projectFiles {
+	position: relative;
+	margin-top: 17px;
+}
+
+.projectFiles img{
+	margin-left: 37px;
+}
+
+.projectFiles #updatafile{
+	margin-top: 17px;
+	margin-left: 0px;
+}
+
+.projectFiles .send {
+	margin: 10px 0 0 90%;
+}
+
+.projectFiles li {
+	margin-top: 2px;
+	background-color: #f7f5f5;
+	width: 100%;
+	height: 45px;
+}
+
+.projectFiles .downFile {
+	display: block;
+	width: 605px;
+	padding: 15px;
+}
+
+.projectFiles .fileName {
+	color: #000000;
+	font: arial;
+	font-size: 17px;
+	height: 45px;
+	width: auto;
+	padding: 15px;
+}
+
+.projectFiles .fileTime {
+
+}
+
+.projectFiles #del_img {
+	float: right;
+	margin-right: 30px;
+	width: 20px;
+	height: 20px;
+}
+</style>
+<div class="uploadfile"id="uploadfile" 
+	style=" position: fixed;
+			top: 50px;
+			left: 404px;
+			width: 602px;
+			height: 604px;
+			background-color: #ffffff;
+			display: none;"
+	>
+	<img src="../img/caseBack.png" onclick="document.getElementById('uploadfile').style.display='none'" />
+	<img src="../img/3.png" style="float: right;margin-right: 30px; width: 23px;height: 20px;margin-top: 5px;" ng-click="updatafile()" class="updataimg" />
+	<br />
+
+	<div style="height: 2px;width: 100%;background: #DDDDDD;">
+	</div>
+	<div id="projectFiles" class="projectFiles">
+				<input type="file" accept=".pdf,image/*" id="taskfile" name='file' onchange="angular.element(this).scope().fileNameChanged()" style="display: none;">
+				<span id='_progressNumber'></span>
+
+				<ul id="updatafile" style="display: none;">
+					<li>
+						<img style="float: left;margin-left: 30px;width: 45px;height: 45px;" id="product_img" />
+						<a href="" class="downFile">
+							<span class="fileName" id="fileName">
+							</span>
+							<span class="fileTime" id="filetime">
+							</span>
+							<img src="../img/icon_del.png" id="del_img" />
+						</a>
+					</li>
+				</ul>
+
+			</div>
+	
+</div>

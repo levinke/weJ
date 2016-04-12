@@ -1,0 +1,32 @@
+<style type="text/css">
+	@charset "UTF-8";
+	[ng\:cloak],
+	[ng-cloak],
+	[data-ng-cloak],
+	[x-ng-cloak],
+	.ng-cloak,
+	.x-ng-cloak,
+	.ng-hide:not(.ng-hide-animate) {
+		display: none !important;
+	}
+	
+	ng\:form {
+		display: block;
+	}
+	
+	.ng-animate-shim {
+		visibility: hidden;
+	}
+	
+	.ng-anchor {
+		position: absolute;
+	}
+</style>
+
+<div ng-controller="ProjectViewController">
+<div ng-include src="'admin/user/left-title.html'"></div>
+<div ng-include src="'admin/user/left-menu.html'"></div>
+<div ng-include src="'admin/project/ProjectMainView_list_project.html'"></div>
+<div ng-include src="'admin/project/ProjectMainView_projectView.html'"></div>
+<div ng-include src="'admin/contact/Xiugaiziliao.html'">	</div>
+</div>

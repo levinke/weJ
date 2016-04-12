@@ -1,0 +1,32 @@
+<div class="RegisterView">
+	<div class="Title">
+		<img src="../img/icon_logo_WE.png" style="margin: 45px 0 0 -30px;float: left;width: 65px;height: 65px;" />
+		<p style="position: fixed;top: 40; margin: 38px 0 0 61px;font-family: arial;font-size: 16px;">
+			让你有一个最好的
+		</p>
+		<span style="position:fixed;top: 90;  color: #95c040;margin: 35px 0 0 190px;font-family: arial;font-weight: bold;font-size: 16px;">
+			工作方式
+		</span>
+	</div>
+	<div class="InputView">
+		<form action="" method="post">
+			<input type="text" placeholder="输入电话号码" class="inputName" ng-model="registerNumber"/>
+			<br />
+			<input type="password" placeholder="验证码" class="inputName" style="width:130px;" ng-model="indentifyingCode"/>
+			<input type="button" class="identifyingCode" id="identifiyingCode" value="发送验证码" ng-click="get_code()"/>
+			<br />
+			<input type="password" placeholder="密码为六位数字或字母（首位为字母）" class="inputName" ng-model="registerPassword"/>
+			<br />
+			<br />
+			<input type="button" class="loginButton" value="注册" ng-click="register()"/>
+		</form>
+	</div>
+	<div class="Footer">
+		<a href="#/admin/LoginView" style="color: #888888;">登录We&nbsp;>></a>
+		<br />
+		<br />
+		<span style="color: #D9D9D9;">
+			www.hehuo.com
+		</span>
+	</div>
+</div>

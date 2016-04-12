@@ -1,0 +1,117 @@
+<div class="taskMain">
+	<div id="taskWhite" style="display: none;">
+		<div class=" index " style="overflow-x: hidden;overflow-y: auto;height: 550px; ">
+			<form action=" " method="post ">
+				<input type="text " class="TaskName " placeholder="新建任务名称 " id="edittask"/>
+				<br />
+				<textarea class="TaskInfo " placeholder="新建任务简介 " id="synopsistask" style="resize: none;"></textarea>
+			</form>
+
+			<div class="member " style="height: 82px;">
+				<ul>
+					<li>
+
+						<a href="# ">
+							<div class="hint ">
+								<span class="hintCounts ">
+								99+
+							</span>
+							</div>
+							<img src="../img/icon_head1.png " />
+							<span id="membersName ">
+							june
+						</span>
+						</a>
+					</li>
+					<li>
+						<a href="# ">
+							<img src="../img/icon_plus.png " style="margin-top: 12px; " />
+						</a>
+					</li>
+					<li>
+						<a href="# ">
+							<img src="../img/icon-_minus.png " style="margin-top: 12px; " />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="TaskDate ">
+				<span>
+          <label>任务开始时间
+            <input type="date" placeholder="年/月/日 "/>
+          </label>
+        </span>
+				<span>
+          <label>任务结束时间
+            <input type="date" placeholder="年/月/日 " />
+          </label>
+        </span>
+			</div>
+
+			<div class="upload ">
+				<a onclick="document.getElementById('uploadfile').style.display='block'"><span >
+				上传文件
+			</span>
+			<img src="../img/icon_right_arrow.png "/>
+			</a>
+				<a onclick="document.getElementById('Youxianji').style.display = 'block'"><span >
+				优先级
+			</span>
+			<img src="../img/icon_right_arrow.png "/>
+			</a>
+
+			</div>
+			<div class="discuss ">
+				<a href="# "><span >
+				评论（...）
+			</span>
+			</a>
+			</div>
+		</div>
+		<input type="button" style="margin: 20px 0 0 240px; height: 31px; width: 99px; line-height: 25px; font-size: 15px; color: #ffffff; background-color:#95c040; border: hidden;" value="确定" ng-click="send()"/>
+	</div>
+
+	<div id="projectContentWhite" style="display: none;">
+		<div class="projectContentTitle">
+			<p class="projectContentTitle" id="projectDetailsTitle">We</p>
+			<textarea class="details" disabled="disabled" ng-model="projectDetails" style="resize: none;">
+			</textarea>
+			<p id="projectDate">2015.10.11--2015.11.20</p>
+		</div>
+
+		<div class="member" style="height: 82px;">
+			<ul>
+				<li>
+					<a href="#">
+						<img src="../img/icon_head1.png" />
+						<span id="membersName">
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="projectData" class="projectData">
+			<ul ng-repeat="file in fileList">
+				<li>
+					<img src="http://112.124.70.60:8081/cgi-bin/download.pl?fid={{file.file_fid}}" style="float: left;margin-left: 30px; width: 45px;height: 45px" />
+					<a href="">
+						<span class="MeansName">
+							{{file.file_name | FileName}}{{file.file_type}}
+						</span>
+						<span>
+							{{file.file_upload_time}}
+						</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="discuss">
+			<a href="#"><span >
+				评论（...）
+			</span>
+			</a>
+		</div>
+	</div>
+
+</div>

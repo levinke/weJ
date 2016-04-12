@@ -1,0 +1,57 @@
+<div class="taskList" id="taskList">
+	<div id="caseTitle" class="caseTitle">
+		<a onclick='javascript :history.back(-1);'><img src="../img/icon_back@2x.png" style="float: left;margin-left: 10px;margin-top: 9px;width: 13px;height: 20px;" /></a>
+		<button class="btnProject" ng-click="getContentProject()">项目详情</button>
+	</div>
+
+	<input id="tab1" type="radio" name="tabs" style="display: none;" checked>
+	<label for="tab1">任务</label>
+
+	<input id="tab2" type="radio" name="tabs" style="display: none;">
+	<label for="tab2">话题</label>
+
+	<!-- 任务界面-->
+	<section id="content1">
+		<div class="taksContentList">
+			<div class="taskScroll">
+				<ul ng-repeat="task in tasks">
+					<li>
+						<div class="priority"></div>
+						<a href="" class="case">
+							<span class="caseName">
+							{{task.title}}
+						</span>
+						</a>
+					</li>
+				</ul>
+				<button class="btnNewTopic" ng-click="addTask()">新建任务</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="content2">
+		<div class="Topiccontent">
+			<div class="sessionScroll">
+				<ul>
+					<li>
+						<a href="" class="topic">
+							<div class="topicName">
+								序列按110修改
+							</div>
+							<div class="ChatContents">
+								James:nihao
+							</div>
+							<div class="hint">
+								<span class="hintCounts">
+				                9
+				        		</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<button class="btnNewTopic" ng-click="addSession()">新建话题</button>
+			</div>
+		</div>
+	</section>
+
+</div>
